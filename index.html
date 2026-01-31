@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calc.png">
+</head>
+<body id="Body">
+    <main>
+        <div id="themeBox">
+        <button id="theme-btn" onclick="darkMode()"> b</button>
+        </div>
+        <div id="resultbox">
+            <input id="result" readonly value='0'>
+        </div>
+        <div id="btnPanel">
+            <div class="btnBox">
+                <button class="btn top" onclick="clearResult()">C</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn top" onclick="calculate('-1')">½</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn top" onclick="calculate('%')">%</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn operation" onclick="calculate('/')">:</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('7')">7</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('8')">8</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('9')">9</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn operation" onclick="calculate('*')">x</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('4')">4</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('5')">5</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('6')">6</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn operation" onclick="calculate('-')">-</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('1')">1</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('2')">2</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('3')">3</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn operation" onclick="calculate('+')">+</button>
+            </div>
+            <div class="btnBox" id="zerobox">
+                <button class="btn" id="zero" onclick="read('0')">0</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn" onclick="read('.')">,</button>
+            </div>
+            <div class="btnBox">
+                <button class="btn operation" onclick="evaluateResult()">=</button>
+            </div> 
+        </div>
+    </main>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>

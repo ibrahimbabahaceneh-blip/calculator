@@ -60,6 +60,7 @@ main{
     font-weight: bold;
     font-family: sans-serif;
     color: white;
+    text-align: center;
     background-color: rgb(20, 20, 20);
     transition: background-color 0.5s;
 }
@@ -107,4 +108,5 @@ main{
 .top:hover{
     background-color: rgb(137, 137, 137);
 }
+
 
